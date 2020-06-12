@@ -1,4 +1,8 @@
 $(function () {
+    $(".fa-gamepad").on("click", function (event) {
+        $("#landingPage").addClass("hide");
+        $("#searchPage").removeClass("hide");
+    })
     $("form").on("submit", function (event) {
         event.preventDefault()
         let search = $("#search").val()
@@ -6,15 +10,10 @@ $(function () {
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                let view = $("#dataView")       //this is to handle the view
-                debugger;
+                let view = $("#dataView")
+
                 $.each(data.results, function (index, game) {
-                    // let name = game.name
-                    // let release = game.released
-                    // let rating = game.rating
-                    // let cover = game.background_image
-                    // let metacritic = game.metacritic
-                    let str = `NAME: ${game.name}, ${game.released}, <img src = "${game.background_image}"></img>`
+                    let str = `<div class = "card Game">Name: ${game.name}, <br> Release Date:${game.released},<br> Rating:${game.rating},<br><img src = "${game.background_image}"></img></div>`
                     view.append(str)
                 })
                 console.log(data.results)
@@ -25,8 +24,3 @@ $(function () {
 
 
 });
-
-// Api - key:
-// 374079 - WilliamS - CXCSDM5P
-// URL: https:
-//tastedive.com/read/api
