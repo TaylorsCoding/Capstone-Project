@@ -59,3 +59,28 @@ img {
      height:100%;
  }
 
+ #dataView {
+     margin-top:7em;
+     font-size:xx-large;
+
+ }
+
+ /* Here is Mobile Breakpoint Template:
+put all your mobile styles here
+@media only screen and (min-width: 350px) {
+   .btnStyle {
+       background-color:#000;
+   }
+}
+tablet styles here
+@media only screen and (min-width: 550px) {
+   .btnStyle {
+       background-color:#fff;
+   }
+}
+desktop styles here
+@media only screen and (min-width: 800px) {
+   .btnStyle {
+       background-color:red;
+   }
+} */

@@ -8,32 +8,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
-
-
 </head>
 
 <body>
-
     <section id="landingPage">
         <div class="welcome">
             <h2>Welcome to Game Guru. <br>Click the red icon below to search any game you can imagine!</h2>
             <i class="fas fa-gamepad fa-10x"></i>
         </div>
-
     </section>
     <section class="hide" id="searchPage">
-        <form>
+        <form id="form">
             <label id="find" for="search">Find Videogames here</label><br>
             <input placeholder="Game Guru" type="text" id="search">
             <input type="submit">
             <section id="dataView">
-            </section>
+        </form>
     </section>
-
-
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>
+
+<!-- $('#orderform').submit(function() {
+    if($('#initials').length == 0){
+        alert('Please fill out your initials.');
+    }
+}); -->
